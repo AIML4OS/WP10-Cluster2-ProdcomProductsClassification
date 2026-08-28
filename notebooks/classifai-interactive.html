@@ -6,12 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Public Statistician 1">
-<meta name="author" content="Public Statistician 2">
-<meta name="dcterms.date" content="2025-05-16">
-<meta name="description" content="This template is a fast starting pack for AIML4OS projects that use Python. For R projects, see this Github repository.">
+<meta name="author" content="AIML4OS WP10 Team">
+<meta name="dcterms.date" content="2026-08-28">
 
-<title>Template for Python training material – Template for training resources in Python</title>
+<title>PRODCOM Product Classification - Interactive Notebook – Template for training resources in Python</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,34 +28,67 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./chapters/chapter1.html" rel="next">
-<link href="./resources/profile/main3.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/chapter1.html" rel="prev">
+<link href="../resources/profile/main3.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -87,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -99,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/classifai-interactive.html">Interactive Resources</a></li><li class="breadcrumb-item"><a href="../notebooks/classifai-interactive.html">PRODCOM Classification Notebook</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -113,9 +144,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./resources/profile/main3.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./resources/profile/main3.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../resources/profile/main3.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../resources/profile/main3.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -127,13 +158,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/chapter1.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">A complete example</span></a>
   </div>
 </li>
@@ -148,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notebooks/classifai-interactive.html" class="sidebar-item-text sidebar-link">
+  <a href="../notebooks/classifai-interactive.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">PRODCOM Classification Notebook</span></a>
   </div>
 </li>
@@ -164,53 +195,60 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-this-template" id="toc-what-is-this-template" class="nav-link active" data-scroll-target="#what-is-this-template">What is this template?</a></li>
-  <li><a href="#how-to-use-it" id="toc-how-to-use-it" class="nav-link" data-scroll-target="#how-to-use-it">How to use it?</a></li>
+  <li><a href="#prodcom-classification---interactive-jupyter-notebook" id="toc-prodcom-classification---interactive-jupyter-notebook" class="nav-link active" data-scroll-target="#prodcom-classification---interactive-jupyter-notebook">PRODCOM Classification - Interactive Jupyter Notebook</a>
+  <ul class="collapse">
+  <li><a href="#interactive-notebook" id="toc-interactive-notebook" class="nav-link" data-scroll-target="#interactive-notebook">📓 Interactive Notebook</a></li>
+  <li><a href="#quick-start" id="toc-quick-start" class="nav-link" data-scroll-target="#quick-start">🚀 Quick Start</a>
+  <ul class="collapse">
+  <li><a href="#option-1-run-locally" id="toc-option-1-run-locally" class="nav-link" data-scroll-target="#option-1-run-locally">Option 1: Run Locally</a></li>
+  <li><a href="#option-2-run-on-onyxiasspcloud" id="toc-option-2-run-on-onyxiasspcloud" class="nav-link" data-scroll-target="#option-2-run-on-onyxiasspcloud">Option 2: Run on Onyxia/SSPCloud</a></li>
+  </ul></li>
+  <li><a href="#notebook-contents" id="toc-notebook-contents" class="nav-link" data-scroll-target="#notebook-contents">📚 Notebook Contents</a></li>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">🎯 How It Works</a></li>
+  <li><a href="#cost-estimation" id="toc-cost-estimation" class="nav-link" data-scroll-target="#cost-estimation">💰 Cost Estimation</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">📋 Requirements</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">🔗 Documentation</a></li>
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">✨ Features</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">🆘 Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#module-not-found" id="toc-module-not-found" class="nav-link" data-scroll-target="#module-not-found">Module not found</a></li>
+  <li><a href="#prodcom-file-not-found" id="toc-prodcom-file-not-found" class="nav-link" data-scroll-target="#prodcom-file-not-found">PRODCOM file not found</a></li>
+  <li><a href="#api-errors" id="toc-api-errors" class="nav-link" data-scroll-target="#api-errors">API errors</a></li>
+  </ul></li>
+  <li><a href="#contributing" id="toc-contributing" class="nav-link" data-scroll-target="#contributing">🤝 Contributing</a></li>
+  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">📜 License</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/edit/main/notebooks/classifai-interactive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/blob/main/notebooks/classifai-interactive.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="classifai-interactive.ipynb" download="classifai-interactive.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<img src="resources/cover/main2.png" style="max-width:900px;width:100%"><br>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/classifai-interactive.html">Interactive Resources</a></li><li class="breadcrumb-item"><a href="../notebooks/classifai-interactive.html">PRODCOM Classification Notebook</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Template for Python training material</h1>
+<h1 class="title">PRODCOM Product Classification - Interactive Notebook</h1>
+<p class="subtitle lead">Classify products using OpenAI without Qdrant dependency</p>
 </div>
 
-<div>
-  <div class="description">
-    <p>This template is a fast starting pack for AIML4OS projects that use <code>Python</code>. For <code>R</code> projects, see <a href="https://github.com/InseeFrLab/AIML4OS-template-quarto-r">this <code>Github</code> repository</a>.</p>
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p><a href="https://github.com/publicstatistician1">Public Statistician 1</a> <a href="mailto:Public.Statistician1@statistics.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-             <p><a href="https://github.com/publicstatistician2">Public Statistician 2</a> <a href="mailto:Public.Statistician2@statistics.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p>AIML4OS WP10 Team </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 16, 2025</p>
+      <p class="date">August 28, 2026</p>
     </div>
   </div>
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/10.1000/182">10.1000/182</a>
-      </p>
-    </div>
-  </div>
   </div>
   
 
@@ -218,18 +256,183 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-this-template" class="level1">
-<h1>What is this template?</h1>
-<p>This template is a Quarto Website customized for the AIML4OS project, designed to be used with <i class="fa-brands fa-python" aria-label="python"></i>.</p>
+<section id="prodcom-classification---interactive-jupyter-notebook" class="level1">
+<h1>PRODCOM Classification - Interactive Jupyter Notebook</h1>
+<p>This page provides access to the interactive <strong>ClassifAI Notebook</strong>, a self-contained Jupyter notebook for classifying products according to the PRODCOM classification system using OpenAI’s language models.</p>
+<section id="interactive-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-notebook">📓 Interactive Notebook</h2>
+<p>The notebook is designed to be: - <strong>Self-contained</strong>: No complex dependencies (no Qdrant required) - <strong>Easy to use</strong>: Only OpenAI API Key needed - <strong>Fully documented</strong>: Step-by-step instructions included - <strong>Ready for cloud</strong>: Deployable on Onyxia/SSPCloud - <strong>Reproducible</strong>: Sample products included for immediate testing</p>
 </section>
-<section id="how-to-use-it" class="level1">
-<h1>How to use it?</h1>
-<p>See <a href="https://aiml4os.github.io/training-material-starting-pack/">this tutorial</a>.</p>
+<section id="quick-start" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start">🚀 Quick Start</h2>
+<section id="option-1-run-locally" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-run-locally">Option 1: Run Locally</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clone repository</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification.git</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> WP10-Cluster2-ProdcomProductsClassification</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Install dependencies</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements-notebook.txt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Open notebook</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> notebook notebooks/ClassifAI_notebook.ipynb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="option-2-run-on-onyxiasspcloud" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-run-on-onyxiasspcloud">Option 2: Run on Onyxia/SSPCloud</h3>
+<p>Click the button below to launch directly on SSPCloud:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://datalab.sspcloud.fr/launcher?service=jupyter&amp;repo=https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification&amp;init-script=sspcloud/init-notebook-trainees.sh&amp;cpu=4&amp;mem=8"><img src="https://www.sspcloud.fr/assets/img/logo-sspcloud.png" class="img-fluid figure-img"></a></p>
+<figcaption>SSPCloud Logo</figcaption>
+</figure>
+</div>
+<p><strong>Or use this URL:</strong></p>
+<pre><code>https://datalab.sspcloud.fr/launcher?service=jupyter&amp;repo=https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification&amp;init-script=sspcloud/init-notebook-trainees.sh&amp;cpu=4&amp;mem=8</code></pre>
+</section>
+</section>
+<section id="notebook-contents" class="level2">
+<h2 class="anchored" data-anchor-id="notebook-contents">📚 Notebook Contents</h2>
+<p>The notebook consists of 9 major steps:</p>
+<ol type="1">
+<li><strong>Install Dependencies</strong> - Setup required Python packages</li>
+<li><strong>Import Libraries</strong> - Load all necessary modules</li>
+<li><strong>Setup Configuration</strong> - Configure API access and settings</li>
+<li><strong>Load PRODCOM Data</strong> - Import classification taxonomy</li>
+<li><strong>Define Helpers</strong> - Utility functions for data handling</li>
+<li><strong>Define OpenAI Functions</strong> - Classification algorithms</li>
+<li><strong>Create Sample Products</strong> - Example data for testing</li>
+<li><strong>Classify Products</strong> - Run the classification workflow</li>
+<li><strong>Display and Save Results</strong> - Generate output CSV</li>
+</ol>
+</section>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">🎯 How It Works</h2>
+<p>The system classifies products by navigating through the PRODCOM hierarchy:</p>
+<pre><code>Product Description
+    ↓
+SECTION (16 options)
+    ↓
+DIVISION (58 options)
+    ↓
+GROUP (244 options)
+    ↓
+CLASS (615 options)
+    ↓
+CPA5 (2,216 options)
+    ↓
+CPA6 (3,500+ options)
+    ↓
+PRODCOM (4,000+ codes)</code></pre>
+<p>At each level, OpenAI selects the most appropriate code.</p>
+</section>
+<section id="cost-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="cost-estimation">💰 Cost Estimation</h2>
+<p>Using <strong>gpt-4o-mini</strong> model:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Products</th>
+<th>Est. Tokens</th>
+<th>Est. Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5 (sample)</td>
+<td>2.5K-5K</td>
+<td>$0.05-0.10</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>5K-10K</td>
+<td>$0.10-0.20</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>25K-50K</td>
+<td>$0.50-1.00</td>
+</tr>
+<tr class="even">
+<td>100</td>
+<td>50K-100K</td>
+<td>$1.00-2.00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="requirements" class="level2">
+<h2 class="anchored" data-anchor-id="requirements">📋 Requirements</h2>
+<ul>
+<li><strong>Python</strong>: 3.8+</li>
+<li><strong>OpenAI API Key</strong>: <a href="https://platform.openai.com/api-keys">Get one here</a></li>
+<li><strong>PRODCOM Data</strong>: <code>ClassifAI/input/prodcom_2023_classification.csv</code> (included)</li>
+</ul>
+</section>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">🔗 Documentation</h2>
+<ul>
+<li><a href="../NOTEBOOK_README.md">Full Notebook Documentation</a></li>
+<li><a href="../ONYXIA_SETUP.md">SSPCloud Setup Guide</a></li>
+<li><a href="../SSPCLOUD_CONFIG.md">SSPCloud Configuration Details</a></li>
+<li><a href="../README.md">Project README</a></li>
+</ul>
+</section>
+<section id="features" class="level2">
+<h2 class="anchored" data-anchor-id="features">✨ Features</h2>
+<p>✅ <strong>No Qdrant Required</strong> - Simplified setup<br>
+✅ <strong>Sample Data Included</strong> - Test immediately<br>
+✅ <strong>Comprehensive Documentation</strong> - Step-by-step guidance<br>
+✅ <strong>Reproducible Results</strong> - Deterministic seed (temperature=0)<br>
+✅ <strong>Cloud Ready</strong> - Works on Onyxia/SSPCloud<br>
+✅ <strong>Open Source</strong> - MIT License</p>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">🆘 Troubleshooting</h2>
+<section id="module-not-found" class="level3">
+<h3 class="anchored" data-anchor-id="module-not-found">Module not found</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements-notebook.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="prodcom-file-not-found" class="level3">
+<h3 class="anchored" data-anchor-id="prodcom-file-not-found">PRODCOM file not found</h3>
+<p>Ensure <code>ClassifAI/input/prodcom_2023_classification.csv</code> exists</p>
+</section>
+<section id="api-errors" class="level3">
+<h3 class="anchored" data-anchor-id="api-errors">API errors</h3>
+<ul>
+<li>Check your API key validity</li>
+<li>Verify sufficient credits</li>
+<li>Check rate limits</li>
+</ul>
+</section>
+</section>
+<section id="contributing" class="level2">
+<h2 class="anchored" data-anchor-id="contributing">🤝 Contributing</h2>
+<p>Found an issue? Have suggestions? - <a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/issues">Open an issue on GitHub</a> - <a href="../README.md">Check existing documentation</a></p>
+</section>
+<section id="license" class="level2">
+<h2 class="anchored" data-anchor-id="license">📜 License</h2>
+<p>This project is part of the AIML4OS WP10 initiative.</p>
+<hr>
+<p><strong>Need help?</strong> Check the <a href="../NOTEBOOK_README.md">NOTEBOOK_README.md</a> for comprehensive documentation.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Start with the sample products included in the notebook to understand how the system works before using your own data.</p>
+</div>
+</div>
 
 
 </section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div>CC-BY 4.0</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -632,11 +835,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../chapters/chapter1.html" class="pagination-link" aria-label="A complete example">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">A complete example</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapters/chapter1.html" class="pagination-link" aria-label="A complete example">
-        <span class="nav-page-text">A complete example</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -644,4 +847,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/edit/main/notebooks/classifai-interactive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/blob/main/notebooks/classifai-interactive.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

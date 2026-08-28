@@ -1,12 +1,134 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Template for Python training material",
+    "objectID": "notebooks/classifai-interactive.html",
+    "href": "notebooks/classifai-interactive.html",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
     "section": "",
-    "text": "What is this template?\nThis template is a Quarto Website customized for the AIML4OS project, designed to be used with .\n\n\nHow to use it?\nSee this tutorial.\n\n\n\n\nReuseCC-BY 4.0",
+    "text": "This page provides access to the interactive ClassifAI Notebook, a self-contained Jupyter notebook for classifying products according to the PRODCOM classification system using OpenAI’s language models.\n\n\nThe notebook is designed to be: - Self-contained: No complex dependencies (no Qdrant required) - Easy to use: Only OpenAI API Key needed - Fully documented: Step-by-step instructions included - Ready for cloud: Deployable on Onyxia/SSPCloud - Reproducible: Sample products included for immediate testing\n\n\n\n\n\n# Clone repository\ngit clone https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification.git\ncd WP10-Cluster2-ProdcomProductsClassification\n\n# Install dependencies\npip install -r requirements-notebook.txt\n\n# Open notebook\njupyter notebook notebooks/ClassifAI_notebook.ipynb\n\n\n\nClick the button below to launch directly on SSPCloud:\n\n\n\nSSPCloud Logo\n\n\nOr use this URL:\nhttps://datalab.sspcloud.fr/launcher?service=jupyter&repo=https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification&init-script=sspcloud/init-notebook-trainees.sh&cpu=4&mem=8\n\n\n\n\nThe notebook consists of 9 major steps:\n\nInstall Dependencies - Setup required Python packages\nImport Libraries - Load all necessary modules\nSetup Configuration - Configure API access and settings\nLoad PRODCOM Data - Import classification taxonomy\nDefine Helpers - Utility functions for data handling\nDefine OpenAI Functions - Classification algorithms\nCreate Sample Products - Example data for testing\nClassify Products - Run the classification workflow\nDisplay and Save Results - Generate output CSV\n\n\n\n\nThe system classifies products by navigating through the PRODCOM hierarchy:\nProduct Description\n    ↓\nSECTION (16 options)\n    ↓\nDIVISION (58 options)\n    ↓\nGROUP (244 options)\n    ↓\nCLASS (615 options)\n    ↓\nCPA5 (2,216 options)\n    ↓\nCPA6 (3,500+ options)\n    ↓\nPRODCOM (4,000+ codes)\nAt each level, OpenAI selects the most appropriate code.\n\n\n\nUsing gpt-4o-mini model:\n\n\n\nProducts\nEst. Tokens\nEst. Cost\n\n\n\n\n5 (sample)\n2.5K-5K\n$0.05-0.10\n\n\n10\n5K-10K\n$0.10-0.20\n\n\n50\n25K-50K\n$0.50-1.00\n\n\n100\n50K-100K\n$1.00-2.00\n\n\n\n\n\n\n\nPython: 3.8+\nOpenAI API Key: Get one here\nPRODCOM Data: ClassifAI/input/prodcom_2023_classification.csv (included)\n\n\n\n\n\nFull Notebook Documentation\nSSPCloud Setup Guide\nSSPCloud Configuration Details\nProject README\n\n\n\n\n✅ No Qdrant Required - Simplified setup\n✅ Sample Data Included - Test immediately\n✅ Comprehensive Documentation - Step-by-step guidance\n✅ Reproducible Results - Deterministic seed (temperature=0)\n✅ Cloud Ready - Works on Onyxia/SSPCloud\n✅ Open Source - MIT License\n\n\n\n\n\npip install -r requirements-notebook.txt\n\n\n\nEnsure ClassifAI/input/prodcom_2023_classification.csv exists\n\n\n\n\nCheck your API key validity\nVerify sufficient credits\nCheck rate limits\n\n\n\n\n\nFound an issue? Have suggestions? - Open an issue on GitHub - Check existing documentation\n\n\n\nThis project is part of the AIML4OS WP10 initiative.\n\nNeed help? Check the NOTEBOOK_README.md for comprehensive documentation.\n\n\n\n\n\n\nTip\n\n\n\nStart with the sample products included in the notebook to understand how the system works before using your own data.",
     "crumbs": [
-      "Introduction"
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#interactive-notebook",
+    "href": "notebooks/classifai-interactive.html#interactive-notebook",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "The notebook is designed to be: - Self-contained: No complex dependencies (no Qdrant required) - Easy to use: Only OpenAI API Key needed - Fully documented: Step-by-step instructions included - Ready for cloud: Deployable on Onyxia/SSPCloud - Reproducible: Sample products included for immediate testing",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#quick-start",
+    "href": "notebooks/classifai-interactive.html#quick-start",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "# Clone repository\ngit clone https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification.git\ncd WP10-Cluster2-ProdcomProductsClassification\n\n# Install dependencies\npip install -r requirements-notebook.txt\n\n# Open notebook\njupyter notebook notebooks/ClassifAI_notebook.ipynb\n\n\n\nClick the button below to launch directly on SSPCloud:\n\n\n\nSSPCloud Logo\n\n\nOr use this URL:\nhttps://datalab.sspcloud.fr/launcher?service=jupyter&repo=https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification&init-script=sspcloud/init-notebook-trainees.sh&cpu=4&mem=8",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#notebook-contents",
+    "href": "notebooks/classifai-interactive.html#notebook-contents",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "The notebook consists of 9 major steps:\n\nInstall Dependencies - Setup required Python packages\nImport Libraries - Load all necessary modules\nSetup Configuration - Configure API access and settings\nLoad PRODCOM Data - Import classification taxonomy\nDefine Helpers - Utility functions for data handling\nDefine OpenAI Functions - Classification algorithms\nCreate Sample Products - Example data for testing\nClassify Products - Run the classification workflow\nDisplay and Save Results - Generate output CSV",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#how-it-works",
+    "href": "notebooks/classifai-interactive.html#how-it-works",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "The system classifies products by navigating through the PRODCOM hierarchy:\nProduct Description\n    ↓\nSECTION (16 options)\n    ↓\nDIVISION (58 options)\n    ↓\nGROUP (244 options)\n    ↓\nCLASS (615 options)\n    ↓\nCPA5 (2,216 options)\n    ↓\nCPA6 (3,500+ options)\n    ↓\nPRODCOM (4,000+ codes)\nAt each level, OpenAI selects the most appropriate code.",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#cost-estimation",
+    "href": "notebooks/classifai-interactive.html#cost-estimation",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "Using gpt-4o-mini model:\n\n\n\nProducts\nEst. Tokens\nEst. Cost\n\n\n\n\n5 (sample)\n2.5K-5K\n$0.05-0.10\n\n\n10\n5K-10K\n$0.10-0.20\n\n\n50\n25K-50K\n$0.50-1.00\n\n\n100\n50K-100K\n$1.00-2.00",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#requirements",
+    "href": "notebooks/classifai-interactive.html#requirements",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "Python: 3.8+\nOpenAI API Key: Get one here\nPRODCOM Data: ClassifAI/input/prodcom_2023_classification.csv (included)",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#documentation",
+    "href": "notebooks/classifai-interactive.html#documentation",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "Full Notebook Documentation\nSSPCloud Setup Guide\nSSPCloud Configuration Details\nProject README",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#features",
+    "href": "notebooks/classifai-interactive.html#features",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "✅ No Qdrant Required - Simplified setup\n✅ Sample Data Included - Test immediately\n✅ Comprehensive Documentation - Step-by-step guidance\n✅ Reproducible Results - Deterministic seed (temperature=0)\n✅ Cloud Ready - Works on Onyxia/SSPCloud\n✅ Open Source - MIT License",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#troubleshooting",
+    "href": "notebooks/classifai-interactive.html#troubleshooting",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "pip install -r requirements-notebook.txt\n\n\n\nEnsure ClassifAI/input/prodcom_2023_classification.csv exists\n\n\n\n\nCheck your API key validity\nVerify sufficient credits\nCheck rate limits",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#contributing",
+    "href": "notebooks/classifai-interactive.html#contributing",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "Found an issue? Have suggestions? - Open an issue on GitHub - Check existing documentation",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
+    ]
+  },
+  {
+    "objectID": "notebooks/classifai-interactive.html#license",
+    "href": "notebooks/classifai-interactive.html#license",
+    "title": "PRODCOM Product Classification - Interactive Notebook",
+    "section": "",
+    "text": "This project is part of the AIML4OS WP10 initiative.\n\nNeed help? Check the NOTEBOOK_README.md for comprehensive documentation.\n\n\n\n\n\n\nTip\n\n\n\nStart with the sample products included in the notebook to understand how the system works before using your own data.",
+    "crumbs": [
+      "Interactive Resources",
+      "PRODCOM Classification Notebook"
     ]
   },
   {
@@ -37,6 +159,16 @@
     "text": "A more sophisticated table\nThis section demonstrates how to create and display a simple pandas DataFrame.\n\n\nCode\nfrom great_tables import GT, html\nfrom great_tables.data import sza\nimport polars as pl\nfrom polars import col as c\nimport polars.selectors as cs\n\nsza_pivot = (\n    pl.from_pandas(sza)\n    .filter((c.latitude == \"20\") & (c.tst &lt;= \"1200\"))\n    .select(pl.col(\"*\").exclude(\"latitude\"))\n    .drop_nulls()\n    .pivot(values=\"sza\", index=\"month\", on=\"tst\", sort_columns=True)\n)\n\n(\n    GT(sza_pivot, rowname_col=\"month\")\n    .data_color(\n        domain=[90, 0],\n        palette=[\"rebeccapurple\", \"white\", \"orange\"],\n        na_color=\"white\",\n    )\n    .tab_header(\n        title=\"Solar Zenith Angles from 05:30 to 12:00\",\n        subtitle=html(\"Average monthly values at latitude of 20&deg;N.\"),\n    )\n    .sub_missing(missing_text=\"\")\n)\n\n\n\n\n\n\n\n\nSolar Zenith Angles from 05:30 to 12:00\n\n\nAverage monthly values at latitude of 20°N.\n\n\n\n0530\n0600\n0630\n0700\n0730\n0800\n0830\n0900\n0930\n1000\n1030\n1100\n1130\n1200\n\n\n\n\njan\n\n\n\n84.9\n78.7\n72.7\n66.1\n61.5\n56.5\n52.1\n48.3\n45.5\n43.6\n43.0\n\n\nfeb\n\n\n88.9\n82.5\n75.8\n69.6\n63.3\n57.7\n52.2\n47.4\n43.1\n40.0\n37.8\n37.2\n\n\nmar\n\n\n85.7\n78.8\n72.0\n65.2\n58.6\n52.3\n46.2\n40.5\n35.5\n31.4\n28.6\n27.7\n\n\napr\n\n88.5\n81.5\n74.4\n67.4\n60.3\n53.4\n46.5\n39.7\n33.2\n26.9\n21.3\n17.2\n15.5\n\n\nmay\n\n85.0\n78.2\n71.2\n64.3\n57.2\n50.2\n43.2\n36.1\n29.1\n26.1\n15.2\n8.8\n5.0\n\n\njun\n89.2\n82.7\n76.0\n69.3\n62.5\n55.7\n48.8\n41.9\n35.0\n28.1\n21.1\n14.2\n7.3\n2.0\n\n\njul\n88.8\n82.3\n75.7\n69.1\n62.3\n55.5\n48.7\n41.8\n35.0\n28.1\n21.2\n14.3\n7.7\n3.1\n\n\naug\n\n83.8\n77.1\n70.2\n63.3\n56.4\n49.4\n42.4\n35.4\n28.3\n21.3\n14.3\n7.3\n1.9\n\n\nsep\n\n87.2\n80.2\n73.2\n66.1\n59.1\n52.1\n45.1\n38.1\n31.3\n24.7\n18.6\n13.7\n11.6\n\n\noct\n\n\n84.1\n77.1\n70.2\n63.3\n56.5\n49.9\n43.5\n37.5\n32.0\n27.4\n24.3\n23.1\n\n\nnov\n\n\n87.8\n81.3\n74.5\n68.3\n61.8\n56.0\n50.2\n45.3\n40.7\n37.4\n35.1\n34.4\n\n\ndec\n\n\n\n84.3\n78.0\n71.8\n66.1\n60.5\n55.6\n50.9\n47.2\n44.2\n42.4\n41.8",
     "crumbs": [
       "A complete example"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Template for Python training material",
+    "section": "",
+    "text": "What is this template?\nThis template is a Quarto Website customized for the AIML4OS project, designed to be used with .\n\n\nHow to use it?\nSee this tutorial.\n\n\n\n\nReuseCC-BY 4.0",
+    "crumbs": [
+      "Introduction"
     ]
   }
 ]
