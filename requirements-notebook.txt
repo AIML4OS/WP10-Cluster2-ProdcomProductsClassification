@@ -1,0 +1,15 @@
+# Requirements for PRODCOM Product Classification Notebook
+# Install with: pip install -r requirements-notebook.txt
+
+# Core dependencies
+openai>=1.0.0
+pandas>=1.3.0
+python-dotenv>=0.19.0
+
+# Optional: for Jupyter support
+jupyter>=1.0.0
+jupyterlab>=3.0.0
+
+# Optional: for enhanced functionality
+requests>=2.28.0
+python-dateutil>=2.8.0

@@ -20,6 +20,33 @@ The system can generate a synthetic product description using an LLM and then id
 
 The classification workflow combines **semantic vector search** with **large language models**, allowing different classification strategies to be used depending on the desired trade-off between speed and accuracy.
 
+## Quick Start: Try the Notebook! 🚀
+
+For a quick, reproducible demonstration without complex setup, try the **standalone Jupyter notebook**:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/AIML4OS/WP10-Cluster2-ProdcomProductsClassification.git
+cd WP10-Cluster2-ProdcomProductsClassification
+
+# 2. Install dependencies
+pip install -r requirements-notebook.txt
+
+# 3. Open the notebook
+jupyter notebook notebooks/ClassifAI_notebook.ipynb
+
+# 4. Run cells sequentially and enter your OpenAI API Key when prompted
+```
+
+**Benefits:**
+- ✅ No Qdrant required
+- ✅ Simple one-click setup
+- ✅ Sample products included
+- ✅ Perfect for testing and demos
+- ✅ Runnable on Onyxia/SSPCloud
+
+📖 **See [NOTEBOOK_README.md](NOTEBOOK_README.md)** for detailed instructions and [ONYXIA_SETUP.md](ONYXIA_SETUP.md) for cloud deployment.
+
 ## Main Features
 
 * **Semantic classification** using vector embeddings and Qdrant.

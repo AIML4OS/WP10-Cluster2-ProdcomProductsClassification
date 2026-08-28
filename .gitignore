@@ -59,3 +59,6 @@ rsconnect/
 __pycache__/
 *.py[codz]
 *$py.class
+
+# cartella misc con documentazione
+misc/

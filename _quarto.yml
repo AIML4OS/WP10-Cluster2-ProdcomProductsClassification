@@ -5,6 +5,7 @@ project:
     - index.qmd
     - chapters/chapter1.qmd
     - notebooks/notebook1.qmd
+    - notebooks/classifai-interactive.qmd
 
 website:
   page-navigation: true
@@ -23,6 +24,10 @@ website:
         text: Introduction
       - href: chapters/chapter1.qmd
         text: A complete example
+      - section: "Interactive Resources"
+        contents:
+          - href: notebooks/classifai-interactive.qmd
+            text: PRODCOM Classification Notebook
 
 format:
   html:
