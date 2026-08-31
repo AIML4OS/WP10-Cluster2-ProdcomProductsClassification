@@ -1,7 +1,14 @@
 #!/bin/bash
 
-# Get the name of the repo
-export MY_REPO=$(ls -d "/home/onyxia/work"/*/ | head -n 1 | xargs basename)
+# Get the repository containing this initialization script
+export MY_REPO=$(find /home/onyxia/work -maxdepth 2 \
+    -type f \
+    -path "*/sspcloud/init-trainees.sh" \
+    -print -quit |
+    sed 's|/home/onyxia/work/||' |
+    sed 's|/sspcloud/init-trainees.sh||')
+
+echo "Repository: $MY_REPO"
 
 # Restore the environment
 sh $MY_REPO/sspcloud/restore_environment.sh
@@ -13,11 +20,3 @@ bash $MY_REPO/sspcloud/download_data.sh
 # Prepare the ClassifAI notebook
 export NOTEBOOK_PATH=$1
 bash $MY_REPO/sspcloud/download_notebook.sh
-
-
-# Ensure Quarto extension is up to date
-code-server --install-extension quarto.quarto
-
-# Additional configuration (system libs, etc.)
-# sudo apt-get update
-# sudo apt-get install ....
