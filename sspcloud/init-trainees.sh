@@ -10,10 +10,9 @@ sh $MY_REPO/sspcloud/restore_environment.sh
 # This script is run with bash because there is a bash array
 bash $MY_REPO/sspcloud/download_data.sh
 
-# Download the notebook
-# $1 is an argument giving the path of the notebook within the website (eg, notebooks/notebook1.ipynb)
-export NOTEBOOK_PATH=$1
-sh $MY_REPO/sspcloud/download_notebook.sh
+# Prepare the ClassifAI notebook
+bash $MY_REPO/sspcloud/download_notebook.sh
+
 
 # Ensure Quarto extension is up to date
 code-server --install-extension quarto.quarto

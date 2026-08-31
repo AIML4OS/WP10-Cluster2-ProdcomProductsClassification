@@ -1,20 +1,15 @@
 #!/bin/bash
-echo "Executing the download_notebook.sh script"
 
-# Retrieve the URL of the website deployed on Github Pages
-cd $MY_REPO
-export GITHUB_OWNER=$(git remote get-url origin | sed -E 's/.*github.com[:\/]([^\/]+)\/.*/\1/')
-export GH_PAGES_WEBSITE="https://${GITHUB_OWNER}.github.io/${MY_REPO}"
-cd ..
+echo "Preparing ClassifAI notebook..."
 
-echo $GH_PAGES_WEBSITE
+WORK_DIR="/home/onyxia/work/${MY_REPO}"
+NOTEBOOK="${WORK_DIR}/notebooks/ClassifAI_notebook.ipynb"
 
-# Define the URL of the notebook
-NOTEBOOK_DOWNLOAD_URL="${GH_PAGES_WEBSITE}/${NOTEBOOK_PATH}"
+if [ -f "$NOTEBOOK" ]; then
+    echo "✓ Notebook found: $NOTEBOOK"
+else
+    echo "✗ Notebook not found: $NOTEBOOK"
+    exit 1
+fi
 
-echo $NOTEBOOK_DOWNLOAD_URL
-
-# Download the notebook directly using curl
-WORK_DIR="/home/onyxia/work"
-echo $NOTEBOOK_DOWNLOAD_URL
-curl -L $NOTEBOOK_DOWNLOAD_URL -o "${WORK_DIR}/exercise.ipynb"
+echo "✓ Notebook ready"
