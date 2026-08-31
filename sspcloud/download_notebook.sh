@@ -12,10 +12,10 @@ else
     exit 1
 fi
 
-echo "✓ Notebook ready"
+# Configure JupyterLab to open the notebook automatically
+mkdir -p /home/onyxia/.jupyter
 
-# Open the relevant notebook when starting JupyterLab
-echo "c.LabApp.default_url = '/lab/tree/${NOTEBOOK_PATH}'" \
+echo "c.ServerApp.default_url = '/lab/tree/${NOTEBOOK_PATH}'" \
     >> /home/onyxia/.jupyter/jupyter_server_config.py
 
 echo "✓ JupyterLab configured to open: ${NOTEBOOK_PATH}"
