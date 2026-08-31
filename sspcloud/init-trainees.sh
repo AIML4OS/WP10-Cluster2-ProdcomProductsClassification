@@ -11,6 +11,7 @@ sh $MY_REPO/sspcloud/restore_environment.sh
 bash $MY_REPO/sspcloud/download_data.sh
 
 # Prepare the ClassifAI notebook
+export NOTEBOOK_PATH=$1
 bash $MY_REPO/sspcloud/download_notebook.sh
 
 
