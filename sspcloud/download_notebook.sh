@@ -15,12 +15,17 @@ fi
 # Configure JupyterLab to open the notebook automatically
 mkdir -p /home/onyxia/.jupyter
 
-# echo "c.ServerApp.default_url = '/lab/tree/${NOTEBOOK_PATH}'" \
-#     >> /home/onyxia/.jupyter/jupyter_server_config.py
+NOTEBOOK_URL="/lab/tree/${MY_REPO}/${NOTEBOOK_PATH}"
 
-# echo "✓ JupyterLab configured to open: ${NOTEBOOK_PATH}"
-
-echo "c.ServerApp.default_url = '/lab/tree/${MY_REPO}/${NOTEBOOK_PATH}'" \
+echo "c.ServerApp.default_url = '${NOTEBOOK_URL}'" \
     >> /home/onyxia/.jupyter/jupyter_server_config.py
 
-echo "✓ JupyterLab configured to open: ${MY_REPO}/${NOTEBOOK_PATH}"
+echo "c.LabApp.default_url = '${NOTEBOOK_URL}'" \
+    >> /home/onyxia/.jupyter/jupyter_server_config.py
+
+echo "✓ JupyterLab configured to open: ${NOTEBOOK_URL}"
+
+# echo "c.ServerApp.default_url = '/lab/tree/${MY_REPO}/${NOTEBOOK_PATH}'" \
+#     >> /home/onyxia/.jupyter/jupyter_server_config.py
+
+# echo "✓ JupyterLab configured to open: ${MY_REPO}/${NOTEBOOK_PATH}"
