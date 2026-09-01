@@ -20,7 +20,11 @@ The system can generate a synthetic product description using an LLM and then id
 
 The classification workflow combines **semantic vector search** with **large language models**, allowing different classification strategies to be used depending on the desired trade-off between speed and accuracy.
 
-## Quick Start: Try the Notebook! 🚀
+## Try the Notebook in Onyxia! 🚀
+
+If you have an Onyxia account and an OpenAI API key, you can try out one of the various classification methods supported by the project directly by [**clicking here.**](https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=ProdcomProductClassification&version=2.5.2&s3=default&service.image.version=«inseefrlab%2Fonyxia-jupyter-python%3Apy3.12.13»&init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FAIML4OS%2FWP10-Cluster2-ProdcomProductsClassification%2Frefs%2Fheads%2Fmain%2Fsspcloud%2Finit-trainees.sh»&init.personalInitArgs=«notebooks%2FClassifAI_notebook.ipynb»&git.repository=«https%3A%2F%2Fgithub.com%2FAIML4OS%2FWP10-Cluster2-ProdcomProductsClassification.git»&git.branch=«main»&git.asCodeServerRoot=true&networking.user.enabled=true&autoLaunch=true)
+
+## Quick Start: Try the Notebook! 
 
 For a quick, reproducible demonstration without complex setup, try the **standalone Jupyter notebook**:
 
